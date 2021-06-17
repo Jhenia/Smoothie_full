@@ -1,0 +1,49 @@
+// out: ../dist/main.css, compress: false, sourceMap: true
+@import "./_fonts.less";
+@import "./_mixins.less";
+@import "./_variables.less";
+
+*:focus {
+  outline: 1px solid transparent;
+}
+
+a:hover {
+  opacity: 0.8;
+  transition: all 1s linear;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: @mainFont, "Roboto";
+  font-size: 10px;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -1px;
+
+  color: #f7ae3b;
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #1e1e1e;
+}
+@import "./blocks/_btn.less";
+@import "./blocks/_logo.less";
+
+@import "./blocks/_header.less";
+@import "./blocks/_smoothie.less";
+@import "./blocks/_about.less";
+@import "./blocks/_products.less";
+@import "./blocks/_story.less";
+@import "./blocks/_testimonials.less";
+@import "./blocks/_blog.less";
+@import "./blocks/_instagram.less";
+@import "./blocks/_footer.less";
+
+@import "./_media.less";

@@ -1,0 +1,119 @@
+// main: ./../main.less
+
+.testimonials {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 117px 0 80px;
+
+  background-color: #672f1b;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -93px;
+    right: 38px;
+    width: 410px;
+    height: 301px;
+
+    display: inline-block;
+
+    background-image: url("@{img}/dots1.png");
+    background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 118px;
+  }
+
+  &__title--big {
+    text-transform: uppercase;
+    color: #f2612d;
+  }
+
+  &__slider {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+
+    margin-bottom: 130px;
+  }
+
+  &__quote {
+    z-index: 2;
+
+    display: flex;
+    flex-basis: 515px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 65px;
+    margin-right: 15px;
+  }
+
+  &__quote-text {
+    text-align: center;
+    position: relative;
+
+    font-size: 1.8rem;
+    line-height: 2;
+
+    color: @mainColor;
+
+    &::before {
+      content: "Sarah-A";
+
+      z-index: -1;
+      position: absolute;
+      left: 50%;
+      top: -50%;
+      transform: translateX(-50%);
+
+      width: max-content;
+
+      font-size: 20rem;
+      font-weight: 800;
+      line-height: 0.2;
+      letter-spacing: -4px;
+      text-align: left;
+
+      color: rgba(82, 25, 5, 0.6);
+      opacity: 0.6;
+    }
+  }
+
+  &__quote-cite {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.5;
+    font-style: italic;
+
+    color: #f7ae3b;
+
+    &::before {
+      content: "-";
+      padding-right: 2px;
+      color: #f7ae3b;
+    }
+  }
+
+  &__quote-avatar {
+    z-index: 2;
+    width: 220px;
+    height: 218px;
+  }
+
+  &__arrow-left {
+    margin-right: 98px;
+  }
+
+  &__arrow-right {
+    transform: rotate(180deg);
+  }
+}

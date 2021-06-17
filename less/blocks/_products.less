@@ -1,0 +1,79 @@
+// main: ./../main.less
+
+.products {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-basis: 25%;
+    min-width: max-content;
+
+    padding: 129px 25px 79px;
+
+    color: @mainColor;
+
+    &:hover .products__img {
+      transform: translateY(-43px) scale(1.2);
+      transition: 1.5s linear;
+    }
+
+    &:first-child {
+      background-color: #632b17;
+    }
+
+    &:nth-child(2) {
+      background-color: #178670;
+    }
+
+    &:nth-child(3) {
+      background-color: #f7ae3b;
+    }
+
+    &:last-child {
+      background-color: #c3471b;
+    }
+  }
+  &__img {
+    margin-bottom: 34px;
+  }
+  &__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &__text {
+    padding: 20px 0 65px;
+
+    font-size: 2.4rem;
+    font-style: italic;
+    line-height: 1;
+  }
+
+  &__btn {
+    padding: 20px 35px;
+    border-radius: 30px;
+    border: solid 2px #fff;
+
+    background: transparent;
+
+    &::after {
+      content: "";
+
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+
+      margin-left: 64px;
+
+      background: url("@{img}arrow-white.png") no-repeat;
+      background-size: contain;
+    }
+  }
+}

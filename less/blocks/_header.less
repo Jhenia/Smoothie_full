@@ -1,0 +1,206 @@
+// main: ./../main.less
+
+.header {
+  min-height: 100vh;
+  margin-bottom: 98px;
+
+  background: url("@{img}heder-bg.jpg") center;
+  background-size: cover;
+
+  &__burger {
+    z-index: 10;
+    position: fixed;
+    top: 50px;
+    right: 42px;
+  }
+
+  &__burger-btn {
+    z-index: 10;
+    display: none;
+    width: 60px;
+    height: 5px;
+
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -20px;
+      right: 0;
+
+      display: block;
+      width: 70px;
+      height: 5px;
+
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    &::after {
+      top: 20px;
+      width: 50px;
+    }
+  }
+
+  &__top {
+    position: relative;
+
+    margin-bottom: 105px;
+    padding: 75px 100px 0;
+  }
+
+  &__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-list {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__menu-item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__menu-link {
+    display: inline-block;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.5;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: @mainColor;
+    &::after {
+      display: block; /*превращаем его в блочный элемент*/
+      content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+      height: 3px; /*задаём высоту линии*/
+      width: 0%; /*задаём начальную ширину элемента (линии)*/
+      background-color: #fff45d; /*цвет фона элемента*/
+      transition: width 1s ease-in-out;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+
+    transform: translateX(-50%);
+  }
+
+  &__personal {
+    display: flex;
+  }
+
+  &__user {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 60px;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 47px;
+      height: 2px;
+      margin: 3px 41px 16px 33px;
+
+      background: #ffd68f url("@{img}header-line.png");
+    }
+  }
+
+  &__user-link {
+    &:first-child {
+      margin-right: 47px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 45px;
+    }
+
+    &:last-child {
+      position: relative;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__user-icon--span {
+    position: absolute;
+    top: -8px;
+    left: 22px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 50%;
+
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+    background: #fff;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-link {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__social-icon {
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    padding: 10px 39px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: #ec5;
+    }
+  }
+}

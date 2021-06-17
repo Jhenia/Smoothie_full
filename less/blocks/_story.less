@@ -1,0 +1,41 @@
+// main: ./../main.less
+
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 120px 10px 160px;
+
+  &__content {
+    flex-basis: 520px;
+    margin-right: 206px;
+  }
+  &__title {
+    margin-bottom: 43px;
+  }
+
+  &__text {
+    padding-bottom: 50px;
+  }
+
+  &__btn {
+    padding: 14px 45px;
+    border: 2px solid transparent;
+    &:hover {
+      background-color: #ec5;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    &::before {
+      content: url("@{img}stamp.png");
+
+      position: absolute;
+      top: 2%;
+      left: -30%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+	<defs>
+		<image width="10" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAMAAADT/c3XAAAAAXNSR0IB2cksfwAAAJxQTFRFQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDO19BqAAAADR0Uk5TAAN94P/8N24/CsveqaooFObzTOnnKRDj5V2l9rSjiA6YlqtAeoDxj0MF5CIxFerrMhb1Nhieiu8AAABySURBVHicjczdGkJQFIThiZGfiI2oVAqlVFLu/95stgvoO1nvwTwLABaaThpLKZgcs6Rsh1y53lrSDyhCTPkR441iknI7cbf3MmaH4ynHmSonx2VmAZTV9UZRa/dx/WgYPOdnMaPXn3y3/HSK3x9FL+8AY3cHvCMoIPEAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none } 
+	</style>
+	<g id="Header">
+		<g id="Header">
+			<g id="Facebook">
+				<path id="Holder" class="shp0" d="M17.5 0C27.16 0 35 7.83 35 17.5C35 27.16 27.16 35 17.5 35C7.83 35 0 27.16 0 17.5C0 7.83 7.83 0 17.5 0Z" />
+				<use id="Facebook-icon" href="#img1" x="12" y="9" />
+			</g>
+		</g>
+	</g>
+</svg>

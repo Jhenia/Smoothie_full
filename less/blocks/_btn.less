@@ -1,0 +1,35 @@
+// main: ./../main.less
+
+.btn {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+
+  border-radius: 35px;
+
+  color: @mainColor;
+  background-color: @secondary;
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+
+    margin-left: 55px;
+
+    background: url("@{img}arrow.png") no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    border: 2px solid #00ffff83;
+    transition: 0.2s linear;
+
+    &::after {
+      transform: scale(1.5);
+    }
+  }
+}

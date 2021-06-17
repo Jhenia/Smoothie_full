@@ -1,0 +1,201 @@
+// main: ./../main.less
+
+.footer {
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 70px 100px 69px;
+
+    background-color: @primary;
+  }
+  &__logo {
+    align-self: center;
+    padding-bottom: 30px;
+    margin-right: 128px;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    text-align: left;
+
+    color: @mainColor;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+  &__list-li:hover {
+    color: #442801;
+    transform: scale(1.1);
+    transition: 0.5s linear;
+  }
+
+  &__link {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.94;
+    letter-spacing: -0.36px;
+    text-align: left;
+
+    color: #6d450c;
+  }
+
+  &__payment-wrapper {
+    display: flex;
+    max-width: 250px;
+    flex-wrap: wrap;
+  }
+
+  &__payment-icon {
+    margin: 0 16px 27px 0;
+    align-self: center;
+    max-width: 50px;
+    object-fit: cover;
+  }
+
+  &__contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 495px;
+    height: 60px;
+    padding: 20px 23px;
+
+    border-radius: 30px;
+    border: transparent;
+
+    &:hover {
+      box-shadow: 0px 5px 10px 2px rgba(138, 138, 138, 0.514);
+      cursor: pointer;
+    }
+
+    &:focus {
+      border: 2px solid #9b9a9a79;
+      outline: 1px solid transparent;
+    }
+
+    &[placeholder] {
+      padding-left: 65px;
+
+      font-size: 1.7rem;
+      font-weight: bold;
+      line-height: 2.06;
+      letter-spacing: -0.34px;
+      text-align: left;
+      text-overflow: ellipsis;
+
+      color: #6d450c;
+      background: #fff url("@{img}input-icon.png") no-repeat;
+      background-position: 25px center;
+    }
+  }
+
+  &__button {
+    position: relative;
+
+    width: 129px;
+    padding: 19px 0;
+    align-self: center;
+
+    border: none;
+
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.22;
+    letter-spacing: -0.36px;
+    text-align: left;
+
+    color: #6d450c;
+    background: transparent;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 8px;
+      left: -66px;
+
+      display: block;
+      width: 48px;
+      height: 43px;
+
+      background-image: url("@{img}arrow-footer.png");
+      background-size: cover;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-20px, -26px);
+  }
+
+  &__social-link {
+    margin-right: 20px;
+  }
+
+  &__bottom {
+    padding: 8px 0;
+    text-align: center;
+    background-color: #6c2c1c;
+  }
+
+  &__bottom-text {
+    font-size: 1.3rem;
+    line-height: 2.69;
+    letter-spacing: 0.26px;
+    text-align: center;
+
+    color: #af8a82;
+  }
+
+  &__btn {
+    position: fixed;
+    bottom: 17px;
+    right: 190px;
+  }
+
+  &__btn-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.5;
+    letter-spacing: -0.32px;
+
+    color: @mainColor;
+  }
+
+  &__btn-link {
+    position: absolute;
+    bottom: 12px;
+    left: 56px;
+  }
+
+  &__btn-arrow {
+    padding: 14px 19px 11px 18px;
+    border-radius: 5px;
+    background-color: #f2662f;
+  }
+}

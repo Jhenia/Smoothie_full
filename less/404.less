@@ -1,0 +1,42 @@
+// out: ../dist/404.css, compress: false, sourceMap: true
+@import "./_variables.less";
+body {
+  height: 100vh;
+  background: url("@{img}heder-bg.jpg") no-repeat;
+  background-size: cover;
+  font-family: @mainFont, "Roboto";
+}
+.over {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.eror {
+  position: relative;
+  z-index: 2;
+
+  padding-top: 100px;
+  text-align: center;
+  font-size: @baseFontSize * 20;
+  color: @primary;
+  text-shadow: 1px 5px 10px lighten(@secondary, 15%);
+}
+.notfound {
+  text-align: center;
+  color: #fff;
+  font-size: @baseFontSize * 3.5;
+  position: relative;
+  z-index: 2;
+
+  a {
+    color: #fff;
+    font-size: @baseFontSize * 2.5;
+    &:hover {
+      color: @secondary;
+      text-decoration: none;
+    }
+  }
+}
